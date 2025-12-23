@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>HaosControl - Test de organizare</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,500" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<header>
+    <a href="home.html" class="logo">HaosControl</a>
+    <nav>
+        <ul>
+            <li><a href="home.html">Acasa</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="sfaturi.html">Test organizare</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="landing-container">
+    <section class="quiz">
+        <h1>Test de organizare HaosControl</h1>
+        <form id="quiz-form">
+
+            <div class="intrebare">
+                <p>1. Cat de des iti planifici ziua in avans?</p>
+                <label><input type="radio" name="q1" value="1" required>1</label>
+                <label><input type="radio" name="q1" value="2">2</label>
+                <label><input type="radio" name="q1" value="3">3</label>
+                <label><input type="radio" name="q1" value="4">4</label>
+                <label><input type="radio" name="q1" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>2. Cat de des iti respecti acele planurile?</p>
+                <label><input type="radio" name="q2" value="1" required>1</label>
+                <label><input type="radio" name="q2" value="2">2</label>
+                <label><input type="radio" name="q2" value="3">3</label>
+                <label><input type="radio" name="q2" value="4">4</label>
+                <label><input type="radio" name="q2" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>3. Cat de des folosesti aplicatii pentru planificare?</p>
+                <label><input type="radio" name="q3" value="1" required>1</label>
+                <label><input type="radio" name="q3" value="2">2</label>
+                <label><input type="radio" name="q3" value="3">3</label>
+                <label><input type="radio" name="q3" value="4">4</label>
+                <label><input type="radio" name="q3" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>4. Cat de des faci task-urile imediat ce apar?</p>
+                <label><input type="radio" name="q4" value="1" required>1</label>
+                <label><input type="radio" name="q4" value="2">2</label>
+                <label><input type="radio" name="q4" value="3">3</label>
+                <label><input type="radio" name="q4" value="4">4</label>
+                <label><input type="radio" name="q4" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>5. Cat de des eviti procrastinarea?</p>
+                <label><input type="radio" name="q5" value="1" required>1</label>
+                <label><input type="radio" name="q5" value="2">2</label>
+                <label><input type="radio" name="q5" value="3">3</label>
+                <label><input type="radio" name="q5" value="4">4</label>
+                <label><input type="radio" name="q5" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>6. Cat de clar iti stabilesti prioritati?</p>
+                <label><input type="radio" name="q6" value="1" required>1</label>
+                <label><input type="radio" name="q6" value="2">2</label>
+                <label><input type="radio" name="q6" value="3">3</label>
+                <label><input type="radio" name="q6" value="4">4</label>
+                <label><input type="radio" name="q6" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>7. Cat de des iti revizuiesti planurile?</p>
+                <label><input type="radio" name="q7" value="1" required>1</label>
+                <label><input type="radio" name="q7" value="2">2</label>
+                <label><input type="radio" name="q7" value="3">3</label>
+                <label><input type="radio" name="q7" value="4">4</label>
+                <label><input type="radio" name="q7" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>8. Cat de des faci taskurile complicate primele?</p>
+                <label><input type="radio" name="q8" value="1" required>1</label>
+                <label><input type="radio" name="q8" value="2">2</label>
+                <label><input type="radio" name="q8" value="3">3</label>
+                <label><input type="radio" name="q8" value="4">4</label>
+                <label><input type="radio" name="q8" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>9. Cat de des iti organizezi biroul/spatiul de lucru?</p>
+                <label><input type="radio" name="q9" value="1" required>1</label>
+                <label><input type="radio" name="q9" value="2">2</label>
+                <label><input type="radio" name="q9" value="3">3</label>
+                <label><input type="radio" name="q9" value="4">4</label>
+                <label><input type="radio" name="q9" value="5">5</label>
+            </div>
+
+            <div class="intrebare">
+                <p>10. Cat de mult te bazezi pe liste si planificari?</p>
+                <label><input type="radio" name="q10" value="1" required>1</label>
+                <label><input type="radio" name="q10" value="2">2</label>
+                <label><input type="radio" name="q10" value="3">3</label>
+                <label><input type="radio" name="q10" value="4">4</label>
+                <label><input type="radio" name="q10" value="5">5</label>
+            </div>
+
+            <br>
+            <button type="button" onclick="calculeazaScor()">Vezi scorul</button>
+        </form>
+        <p>Scor: <span id="rezultat">0%</span></p>
+        <p id="sfat"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <span>HaosControl - Targu Mures</span>
+        <span>Email: <a href="mailto:contact@haoscontrol.ro">contact@haoscontrol.ro</a></span>
+        <span>Telefon: <a href="tel:+40123456789">0123456789</a></span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

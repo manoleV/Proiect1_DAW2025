@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>HaosControl - Servicii</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,500" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<header>
+    <a href="home.html" class="logo">HaosControl</a>
+    <nav>
+        <ul>
+            <li><a href="home.html">acasa</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="sfaturi.html">Sfaturi</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="landing-container">
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Serviciile noastre</h1>
+            <p>Aceste pacehte sunt pentru studentii care au incercat totul dar inca nu au reusit. Noi venim in ajutor cu diverse tehnici si metodologii testate in timpul bataliilor(sesiunilor).</p>
+        </div>
+        <div class="hero-image">
+            <img src="img/happyGuy.png" alt="Student fericit" id="happustudent">
+        </div>
+    </section>
+
+    <section class="pachete">
+        <div class="grid-pachete" id="tabel-pachete"></div>
+    </section>
+
+    <section class="oferta-speciala">
+        <header class="oferta-header">
+            <h2>Creaza-ti propria oferta</h2>
+            <span>Pret Total: <strong id="pret-total">0</strong> RON</span>
+        </header>
+
+        <form id="special-form">
+            <div class="servicii">
+                <label><input type="checkbox" value="50" /> Planificare sesiune de studiu (50 RON)</label>
+                <label><input type="checkbox" value="70" /> Organizare proiecte și teme (70 RON)</label>
+                <label><input type="checkbox" value="40" /> Program zilnic anti-procrastinare (40 RON)</label>
+                <label><input type="checkbox" value="60" /> Ghid de prioritizare a task-urilor (60 RON)</label>
+                <label><input type="checkbox" value="80" /> Crearea de checklist-uri personalizate (80 RON)</label>
+                <label><input type="checkbox" value="90" /> Mentorat pentru planificarea sesiunii (90 RON)</label>
+                <label><input type="checkbox" value="50" /> Organizare digitală a notițelor (50 RON)</label>
+                <label><input type="checkbox" value="65" /> Tehnici de reducere a stresului academic (65 RON)</label>
+                <label><input type="checkbox" value="55" /> Sesiuni de evaluare a timpului pierdut (55 RON)</label>
+                <label><input type="checkbox" value="75" /> Consultanță personalizată pentru managementul sarcinilor (75 RON)</label>
+                <button type="button" onclick="trimiteOferta()">Trimite oferta</button>
+            </div>
+        </form>
+        <p id="bonus"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <span>HaosControl - Targu Mures</span>
+        <span>Email: <a href="mailto:contact@haoscontrol.ro">contact@haoscontrol.ro</a></span>
+        <span>Telefon: <a href="tel:+40123456789">0123456789</a></span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
